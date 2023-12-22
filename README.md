@@ -61,9 +61,5 @@ This project is developed as a private gift and is not intended for public use. 
 
 For any inquiries, concerns, or support, please contact the developer responsible for this custom project.
 
-**Developer Contact Information:**
-
-- Name: Omama Intikhab.
-- Email: omamaintikhab97@gmail.com
 
 Let this application be a valuable tool for managing finances, making informed investment choices, and planning for a secure financial future. 
