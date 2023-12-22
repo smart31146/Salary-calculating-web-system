@@ -1,0 +1,14 @@
+#!/bin/bash
+
+SOURCE_FILE="/"
+DESTINATION_DIR="/home/ubuntu/app/"
+DESTINATION_FILE="$DESTINATION_DIR/*"
+
+# Check if the file already exists in the destination directory
+if [ ! -e "$DESTINATION_FILE" ]; then
+  # Copy the file only if it doesn't exist
+  cp -r "$SOURCE_FILE" "$DESTINATION_DIR"
+  echo "Deployment complete."
+else
+  echo "$DESTINATION_FILE already exists. No action needed."
+fi

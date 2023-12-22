@@ -1,0 +1,56 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db" //env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  username  String?  @unique
+  name      String
+  city      String?
+  country   String?
+  gender    String?
+  password  String
+  resetPasswordToken   String? @unique
+  resetPasswordExpireTime  DateTime?
+  verified  Boolean  @default(false)
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  Budget    Budget[]
+}
+
+model Budget {
+  id            String          @id @default(uuid())
+  user          User            @relation(fields: [userId], references: [id])
+  userId        String
+  name          String
+  CategoryGroup CategoryGroup[]
+}
+
+model CategoryGroup {
+  id          String     @id @default(uuid())
+  budget      Budget     @relation(fields: [budgetId], references: [id])
+  budgetId    String
+  name        String
+  description String
+  createdAt   DateTime   @default(now())
+  Category    Category[]
+}
+
+model Category {
+  id              String        @id @default(uuid())
+  categoryGroup   CategoryGroup @relation(fields: [categoryGroupId], references: [id])
+  categoryGroupId String
+  name            String
+  monthlyAmount   Decimal
+  note            String
+  createdAt       DateTime      @default(now())
+}

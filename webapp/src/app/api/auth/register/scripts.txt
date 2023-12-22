@@ -1,0 +1,24 @@
+// await prisma.user.deleteMany()
+  // const userCount = await prisma.user.getMany();
+  // console.log('Total number of users:', userCount);
+  // await prisma.user.deleteMany({
+  //   where: {
+  //     email: {
+  //       in: ['omamaintikhab97@gmail.com', 'ointikhab97@gmail.com',
+  //       'syedarabbia9@gmail.com',
+  //       'maarijmallick22@gmail.com',
+  //       'sunaim@gmail.com',
+  //       'sunaimm@gmail.com'
+  //     ],
+  //     },
+  //   },
+  // });
+  // const allUserEmails = await prisma.user.findMany({
+  //   select: {
+  //     email: true,
+  //   },
+  // });
+
+  // console.log('All user emails:', allUserEmails.map((user) => user.email));
+
+  ______________________

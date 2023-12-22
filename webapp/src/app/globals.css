@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+div.bg-opacity-60.backdrop-blur-sm.inset-0.w-full.h-full.pointer-events-auto {
+    position: fixed !important;
+  }
+
+
+.cselect{
+  user-select: none;
+}
+
+.chart-container {
+  height: 500px;
+  background-color: #3b38d1;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.chart-container .highcharts-container {
+  margin-left: auto;
+  margin-right: auto;
+}

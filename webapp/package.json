@@ -1,0 +1,53 @@
+{
+  "name": "webapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@heroicons/react": "^2.0.18",
+    "@material-tailwind/react": "^2.1.0",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.14.19",
+    "@prisma/client": "^5.1.1",
+    "@sendgrid/mail": "^7.4.6",
+    "@tabler/icons-react": "^2.31.0",
+    "@types/node": "20.5.1",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.15",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.19",
+    "firebase": "^10.7.1",
+    "highcharts": "^11.1.0",
+    "highcharts-react-official": "^3.2.0",
+    "html2canvas": "^1.4.1",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.2",
+    "mui": "^0.0.1",
+    "next": "13.4.19",
+    "postcss": "8.4.28",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "react-number-format": "^5.3.0",
+    "react-router-dom": "^6.18.0",
+    "react-scroll": "^1.8.9",
+    "react-spinners": "^0.13.8",
+    "react-to-print": "^2.14.13",
+    "styled-components": "^6.1.1",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.7",
+    "prisma": "^5.1.1"
+  }
+}

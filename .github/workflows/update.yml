@@ -1,0 +1,28 @@
+
+name: Autoupdate
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy using SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: "15.223.132.88"
+          username: "ubuntu"
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /home/ubuntu/app/ShinesBudgetV2Mongo/webapp
+            git stash
+            git pull
+            docker-compose build
+            docker-compose up -d
+            
+
+            

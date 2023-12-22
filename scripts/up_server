@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/ubuntu/app/webapp/
+make build
+make up
